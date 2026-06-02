@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbansole</title>
+    <script src="https://kit.fontawesome.com/1ce3d09458.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="header">
+        <ul>
+            <li><a href="#">Urbansole</a></li>
+        </ul>
+        <div class="logo">
+            <h1>Urbansole</h1>
+        </div>
+        <div class="icon">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+
+    </div>
+    </section>
+    <br>
+    <section class="topnav">
+       <center> <a class="active"  href="index.html">Home</a>
+                <a href="product1.html">Product</a>
+                <a href="About.html">About us</a>
+                <a href="contact.html">Contact us</a></center>
+
+            
+
+    </section>
+
+        
+    <div class="slideshow-container">
+        
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/banner1.jpg">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/banner2.jpg">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/banner3">
+        
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+        </head>
+        <body>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
+        <section class="main_page">
+          <div class="free_ship">
+        <i class="fa-solid fa-truck-fast">FREE SHIPPING</i>
+      
+        <h4></h4>
+        <p>
+          Free shipping on all order above<br> Rs. 3000</p>
+        </div>
+        <div class="customer_support">
+          <i class="fa-sharp fa-solid fa-headset">CUSTOMER SUPPORT</i>
+          <h4></h4>
+            <P></P>MONDAY TO SATURDAY 9AM TO5<br>PM</p>
+          </div>
+          <div class="payment">
+            <i class="fa-solid fa-lock">100% PAYMENT SECURE</i>
+            <h4></h4>
+             <p>We ensure secure payment with<BR> PEV</P>
+             </div>
+             </section>
+            <video src="images/Shoes by 2GO - Theatrical Ad Film _ Commercial.mp4" preload="auto" controls loop width="300%" height="500px"></video>
+            
+</body>
+</html>
